@@ -1,0 +1,16 @@
+// skjnmkfjnmkjnsqjndqnd:wndmsjk
+// dnfdnfmslnfmslnf
+// lkjsndmnsf
+// mosjdfmsfmlkndmlkfndmlkfnsmdnfsdfsdfndlnfsdlfnk
+
+const fs = require('fs');
+fs.readFile(process.argv[2],  (err, fd) => {
+    if (err) return console.log(err)
+    else return console.log(fd.toString().split('\n').length-1)
+
+});
+
+
+const fs = require('fs'); 
+console.log(fs.readFileSync(process.argv[2]).toString().split('\n').length-1)
+ 
